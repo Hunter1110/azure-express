@@ -24,7 +24,7 @@ app.use(express.static(path.join(__dirname, 'public')));
 
 app.use('/', index);
 app.use('/users', users);
-app.post('/test', function(req, res, next) {
+app.use('/test', function(req, res, next) {
   var username = req.body.username;
   var password = req.body.password;
 
