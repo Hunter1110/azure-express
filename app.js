@@ -24,12 +24,6 @@ app.use(express.static(path.join(__dirname, 'public')));
 
 app.use('/', index);
 app.use('/users', users);
-app.use('/test', function(req, res, next) {
-  var username = req.body.username;
-  var password = req.body.password;
-
-  res.json({user: username, password: password});
-});
 
 // catch 404 and forward to error handler
 app.use(function(req, res, next) {
