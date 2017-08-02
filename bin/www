@@ -16,6 +16,7 @@ app.set('port', port);
 /**
  * Create HTTPS server.
  */
+/*
 var https = require('https');
 var path = require('path');
 var fs = require('fs');
@@ -24,14 +25,15 @@ var options = {
   passphrase: '@open04openmind'
 };
 var server = https.createServer(options, app);
+*/
 
 /**
  * Create HTTP server.
  */
-/*
+
 var http = require('http');
 var server = http.createServer(app);
-*/
+
 /**
  * Listen on provided port, on all network interfaces.
  */
