@@ -3,3 +3,8 @@ extends layout
 block content
   h1= title
   p Welcome to #{title}
+  form(action="/test", method="POST")
+    input#username(type="text")  
+    input#password(type="password")
+    button(type="submit") Test
+
