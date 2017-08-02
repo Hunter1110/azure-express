@@ -7,6 +7,7 @@ router.get('/', function(req, res, next) {
 });
 
 router.post('/test', function(req, res, next) {
+  
   var username = req.body.username;
   var password = req.body.password;
   res.json({user: username, password: password});
